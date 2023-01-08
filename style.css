@@ -1,0 +1,443 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@300;400;500;600;700;800&display=swap');*/
+/* Root Variable */
+:root {
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light)
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins,sans-serif;
+    font-size: 0.88rem;
+    background: var(--color-background);
+    user-select: none;
+    overflow-x: hidden;
+}
+.container{
+    display: grid;
+    width: 96% ;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+}
+a{
+    color: var(--color-dark);
+}
+img{
+    display: block;
+    width: 100%;
+}
+h1{
+    font-weight: 800;
+    font-size:1.8rem ; 
+}
+h2{
+    font-size: 1.4rem;
+}
+h3{
+    font-size: 0.87rem;
+}
+h4{
+    font-size:0.8rem ;
+}
+h5{
+    font-size:0.77rem ;
+}
+small{
+    font-size: 0.75rem;
+}
+.profile-photo{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+p{
+    color:var(--color-dark-variant) ;
+}
+b{
+    color: var(--color-dark);
+}
+.primary{
+    color: var(--color-primary);
+}
+.danger{
+    color: var(--color-danger);
+}
+.success{
+    color: var(--color-success);
+}
+.warning{
+    color: var(--color-warning);
+}
+
+aside{
+    height: 100vh;
+}
+aside .top{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+aside .logo{
+    display: flex;
+    gap:0.8rem;
+}
+aside .logo img{
+    width: 2rem;
+    height: 2rem;
+}
+/*SLIDEBAR */
+aside .sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 3rem;
+}
+aside h3{
+    font-weight:  500;
+}
+aside .sidebar a{
+    display: flex;
+    color: var(--color-info-dark);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+}
+aside .sidebar a span{
+    font-size: 1.6rem;
+    transition:  all 300ms ease;
+}
+/*aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 2rem ;
+    width: 100%;
+}*/
+#SettingsAnchor{
+    margin-top: 140px;
+    bottom: 1rem ;
+    width: 100%;
+}
+#LogoutAnchor{
+    bottom: 1rem ;
+    width: 100%;
+}
+aside .sidebar a.active{
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-left: 0 ;
+    border-radius: 0.4rem;
+}
+aside .sidebar a.active:before{
+    content: "";
+    width: 6px;
+    height: 100%;
+}
+aside .sidebar a.active span{
+    color: var(--color-primary);
+    margin-left: calc(1rem-3px);
+}
+aside .sidebar a:hover {
+    color: var(--color-primary);
+}
+aside .sidebar a:hover span{
+    margin-left: 1rem;
+}
+.searchBox{
+    margin-top: 2%;
+    width: 250px;
+    height: 40px;
+    padding: 0px 10px;
+    border-radius: 1rem;
+    background: gainsboro;
+}
+.elementsInSearchBox{
+    width: 100%;
+    height: 100%;
+}
+.search{
+    background: gainsboro;
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 0px 5px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-family: poppins,sans-serif;
+    color: #424242;
+    font-weight: 500;
+}
+.elementItems {
+    margin-top: 1.4rem;
+    height: 1.6rem;
+    width: 1.8rem;
+    cursor: pointer;
+}
+.elementItems .profile-photo {
+    height: 1.6rem;
+    width: 1.8rem;
+    border-radius: var(--border-radius-1);
+}
+#bookingTxt{
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.dropdown{
+    min-width: 10px;
+    position: relative;
+    margin: 2em;
+}
+
+.select{
+    background: gray;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px gray solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.select-clicked{
+    border: 2px #26489a solid;
+    box-shadow: 0 0 0.8em #26489a;
+}
+.caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top:6px solid #fff ;
+    transition: 0.3s;
+}
+.caret-rotate{
+    transform: rotate(180deg);
+}
+.menu{
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: gray;
+    box-shadow: 0 0.5em 1em rgb(0,0, 0,0.2);
+    border-radius: 0.5em;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+.menu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.menu-open{
+    display: block;
+    opacity: 1;
+}
+gridAndTuneIcons{
+    margin-left: 20px;
+    margin-right: 50px;
+}
+.gridAndTuneIcons td{
+    margin-left: 20px;
+}
+.grid{
+    /*: grid;
+    width: 114em;
+    grid-gap:6rem ;
+    grid-template-columns:repeat(auto-fit, minmax(30rem,1fr));
+    align-items: start;*/
+    margin: 15px;
+    border-radius: 0.5rem;
+    background-color: #41f1b6;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin: 10px;
+}
+.dashBoardgrid{
+    
+    margin: 15px;
+    border-radius: 0.5rem;
+    background-color: blueviolet;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin: 15px;
+}
+.dashBoardgrid span{
+    margin-top: 10px;
+    font-size: 36px;
+    border-radius: 0.4rem;
+}
+.dashBoardgrid h3{
+    font-size: 26px;
+}
+.rangeGrid{
+    margin: 15px;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin: 15px;
+    background: wheat;
+}
+.rangeGrid span{
+    margin-top: 10px;
+    font-size: 36px;
+    border-radius: 0.4rem;
+    background-color: red;
+}
+.rangeGrid h3{
+    font-size: 26px;
+}
+.FluidGrid{
+    margin: 15px;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin: 15px;
+    background: wheat;  
+}
+.FluidGrid span{
+    margin-top: 10px;
+    font-size: 36px;
+    border-radius: 0.4rem;
+    background-color: blueviolet;
+}
+.FluidGrid h3{
+    font-size: 26px;
+}
+table{
+    margin: 20px;
+}
+.tireGrid{
+    margin: 15px;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin: 15px;
+    background: wheat;  
+}
+.tireGrid span{
+    margin-top: 10px;
+    font-size: 36px;
+    border-radius: 0.4rem;
+    background-color: yellow;
+}
+.progress{
+    position: relative;
+    width: 300px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.progress .precent{
+    width: 150px;
+    height:150px;
+}
+.progress .precent svg{
+    width: 150px;
+    height:150px;
+}
+.progress .precent svg circle{
+    width: 150px;
+    height:150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+}
+.progress .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: poppins,sans-serif;
+
+}
+#chartdiv {
+    width: 50%;
+    height: 250px;
+}
+#linegraph {
+    width: 50%;
+    height: 250px;
+  max-width: 100%
+  }
+.Charts{
+    display: flex;
+}
+.chartTitles{
+    display: flex;
+}

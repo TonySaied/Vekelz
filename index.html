@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--ICONS-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>MOTIV</title>
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img src="./images/logo.png" alt="" />
+            <h2>Motiv.</h2>
+          </div>
+        </div>
+        <div class="sidebar">
+          <a href="#">
+            <span class="material-symbols-outlined">grid_view</span>
+            <h3>Dashboard</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined">account_circle</span>
+            <h3>Assets</h3>
+          </a>
+          <a href="#" class="active">
+            <span class="material-symbols-outlined">directions_car</span>
+            <h3>Booking</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined">work</span>
+            <h3>Sell Cars</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined">shopping_cart</span>
+            <h3>Buy Cars</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined">design_services</span>
+            <h3>Services</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined">calendar_month</span>
+            <h3>Calendar</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined">chat</span>
+            <h3>Messages</h3>
+          </a>
+          <!--Buttom Elements-->
+          <a href="#" id="SettingsAnchor">
+            <span class="material-symbols-outlined">settings</span>
+            <h3>Settings</h3>
+          </a>
+          <a href="#" id="LogoutAnchor">
+            <span class="material-symbols-outlined">logout</span>
+            <h3>Log out</h3>
+          </a>
+        </div>
+      </aside>
+      <!--Main-->
+      <main>
+        <div class="searchBox">
+          <table class="elementsInSearchBox">
+            <tr>
+              <td>
+                <span class="material-symbols-outlined">search</span>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="search"
+                  placeholder="Search or Type"
+                />
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="thisBox">
+          <h3 id="bookingTxt">Booking</h3>
+          <!--Dropdowns-->
+          <table>
+            <tr>
+              <td>
+                <!--1st-->
+                <div class="dropdown">
+                  <div class="select">
+                    <span class="selected">New</span>
+                    <div class="caret"></div>
+                  </div>
+                  <ul class="menu">
+                    <li class="active">New</li>
+                    <li>Used</li>
+                  </ul>
+                </div>
+              </td>
+              <!--2nd-->
+              <td>
+                <div class="dropdown">
+                  <div class="select">
+                    <span class="selected">Toyota</span>
+                    <div class="caret"></div>
+                  </div>
+                  <ul class="menu">
+                    <li class="active">Toyota</li>
+                    <li>BMW</li>
+                    <li>KIA</li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <span
+                  class="material-symbols-outlined"
+                  style="
+                    background-color: gray;
+                    border-radius: 50%;
+                    padding: 5px;
+                    margin-left: 800px;
+                  "
+                  >grid_view</span
+                >
+              </td>
+              <td>
+                <span
+                  class="material-symbols-outlined"
+                  style="
+                    background-color: blueviolet;
+                    border-radius: 50%;
+                    padding: 5px;
+                  "
+                  >tune</span
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!--Start of Grid-->
+        <table>
+          <tr>
+            <td>
+              <div class="grid">
+                <div class="grid-item">
+                  <div class="card">
+                    <table>
+                      <tr>
+                        <td>
+                          <strong style="margin-right: 40px"
+                            >Porsche 718 Cayaman S</strong
+                          >
+                        </td>
+                        <td>
+                          <span class="material-symbols-outlined"
+                            >favorite</span
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                    <p style="margin-bottom: 5px">Coupe</p>
+                    <img
+                      class="card-img"
+                      src="images/car.jpg"
+                      alt="Car"
+                      style="height: 120px; width: 120px"
+                    />
+                    <table>
+                      <tr>
+                        <td>
+                          <span class="material-symbols-outlined">person</span>
+                        </td>
+                        <td>
+                          <p style="margin-right: 5px">4</p>
+                        </td>
+                        <td>
+                          <span class="material-symbols-outlined">cycle</span>
+                        </td>
+                        <td>
+                          <p style="margin-right: 40px">Manual</p>
+                        </td>
+                        <td>
+                          <p><strong>$400</strong>/d</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="grid">
+                <div class="grid-item">
+                  <div class="card">
+                    <table>
+                      <tr>
+                        <td>
+                          <strong style="margin-right: 50px"
+                            >Porsche 718 Cayaman S</strong
+                          >
+                        </td>
+                        <td>
+                          <span
+                            class="material-symbols-outlined"
+                            style="color: red"
+                            >favorite</span
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                    <p style="margin-bottom: 5px">Coupe</p>
+                    <img
+                      class="card-img"
+                      src="images/car.jpg"
+                      alt="Car"
+                      style="height: 120px; width: 120px"
+                    />
+                    <table>
+                      <tr>
+                        <td>
+                          <span class="material-symbols-outlined">person</span>
+                        </td>
+                        <td>
+                          <p style="margin-right: 5px">4</p>
+                        </td>
+                        <td>
+                          <span class="material-symbols-outlined">cycle</span>
+                        </td>
+                        <td>
+                          <p style="margin-right: 40px">Manual</p>
+                        </td>
+                        <td>
+                          <p><strong>$400</strong>/d</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="grid">
+                <div class="grid-item">
+                  <div class="card">
+                    <table>
+                      <tr>
+                        <td>
+                          <strong style="margin-right: 50px"
+                            >Porsche 718 Cayaman S</strong
+                          >
+                        </td>
+                        <td>
+                          <span class="material-symbols-outlined"
+                            >favorite</span
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                    <p style="margin-bottom: 5px">Coupe</p>
+                    <img
+                      class="card-img"
+                      src="images/car.jpg"
+                      alt="Car"
+                      style="height: 120px; width: 120px"
+                    />
+                    <table>
+                      <tr>
+                        <td>
+                          <span class="material-symbols-outlined">person</span>
+                        </td>
+                        <td>
+                          <p style="margin-right: 5px">4</p>
+                        </td>
+                        <td>
+                          <span class="material-symbols-outlined">cycle</span>
+                        </td>
+                        <td>
+                          <p style="margin-right: 40px">Manual</p>
+                        </td>
+                        <td>
+                          <p><strong>$400</strong>/d</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <!--End of Grid-->
+        <!--Start of Grid-->
+        <table>
+          <tr>
+            <td>
+              <div class="grid">
+                <div class="grid-item">
+                  <div class="card">
+                    <table>
+                      <tr>
+                        <td>
+                          <strong style="margin-right: 50px"
+                            >Porsche 718 Cayaman S</strong
+                          >
+                        </td>
+                        <td>
+                          <span class="material-symbols-outlined"
+                            >favorite</span
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                    <p style="margin-bottom: 5px">Coupe</p>
+                    <img
+                      class="card-img"
+                      src="images/car.jpg"
+                      alt="Car"
+                      style="height: 120px; width: 120px"
+                    />
+                    <table>
+                      <tr>
+                        <td>
+                          <span class="material-symbols-outlined">person</span>
+                        </td>
+                        <td>
+                          <p style="margin-right: 5px">4</p>
+                        </td>
+                        <td>
+                          <span class="material-symbols-outlined">cycle</span>
+                        </td>
+                        <td>
+                          <p style="margin-right: 40px">Manual</p>
+                        </td>
+                        <td>
+                          <p><strong>$400</strong>/d</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="grid">
+                <div class="grid-item">
+                  <div class="card">
+                    <table>
+                      <tr>
+                        <td>
+                          <strong style="margin-right: 50px"
+                            >Porsche 718 Cayaman S</strong
+                          >
+                        </td>
+                        <td>
+                          <span class="material-symbols-outlined"
+                            >favorite</span
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                    <p style="margin-bottom: 5px">Coupe</p>
+                    <img
+                      class="card-img"
+                      src="images/car.jpg"
+                      alt="Car"
+                      style="height: 120px; width: 120px"
+                    />
+                    <table>
+                      <tr>
+                        <td>
+                          <span class="material-symbols-outlined">person</span>
+                        </td>
+                        <td>
+                          <p style="margin-right: 5px">4</p>
+                        </td>
+                        <td>
+                          <span class="material-symbols-outlined">cycle</span>
+                        </td>
+                        <td>
+                          <p style="margin-right: 40px">Manual</p>
+                        </td>
+                        <td>
+                          <p><strong>$400</strong>/d</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="grid">
+                <div class="grid-item">
+                  <div class="card">
+                    <table>
+                      <tr>
+                        <td>
+                          <strong style="margin-right: 50px"
+                            >Porsche 718 Cayaman S</strong
+                          >
+                        </td>
+                        <td>
+                          <span class="material-symbols-outlined"
+                            >favorite</span
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                    <p style="margin-bottom: 5px">Coupe</p>
+                    <img
+                      class="card-img"
+                      src="images/car.jpg"
+                      alt="Car"
+                      style="height: 120px; width: 120px"
+                    />
+                    <table>
+                      <tr>
+                        <td>
+                          <span class="material-symbols-outlined">person</span>
+                        </td>
+                        <td>
+                          <p style="margin-right: 5px">4</p>
+                        </td>
+                        <td>
+                          <span class="material-symbols-outlined">cycle</span>
+                        </td>
+                        <td>
+                          <p style="margin-right: 40px">Manual</p>
+                        </td>
+                        <td>
+                          <p><strong>$400</strong>/d</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <!--End of Grid-->
+
+        <!--Start of Grid-->
+        <table>
+          <tr>
+            <td>
+              <div class="grid">
+                <div class="grid-item">
+                  <div class="card">
+                    <table>
+                      <tr>
+                        <td>
+                          <strong style="margin-right: 50px"
+                            >Porsche 718 Cayaman S</strong
+                          >
+                        </td>
+                        <td>
+                          <span class="material-symbols-outlined"
+                            >favorite</span
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                    <p style="margin-bottom: 5px">Coupe</p>
+                    <img
+                      class="card-img"
+                      src="images/car.jpg"
+                      alt="Car"
+                      style="height: 120px; width: 120px"
+                    />
+                    <table>
+                      <tr>
+                        <td>
+                          <span class="material-symbols-outlined">person</span>
+                        </td>
+                        <td>
+                          <p style="margin-right: 5px">4</p>
+                        </td>
+                        <td>
+                          <span class="material-symbols-outlined">cycle</span>
+                        </td>
+                        <td>
+                          <p style="margin-right: 40px">Manual</p>
+                        </td>
+                        <td>
+                          <p><strong>$400</strong>/d</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="grid">
+                <div class="grid-item">
+                  <div class="card">
+                    <table>
+                      <tr>
+                        <td>
+                          <strong style="margin-right: 50px"
+                            >Porsche 718 Cayaman S</strong
+                          >
+                        </td>
+                        <td>
+                          <span class="material-symbols-outlined"
+                            >favorite</span
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                    <p style="margin-bottom: 5px">Coupe</p>
+                    <img
+                      class="card-img"
+                      src="images/car.jpg"
+                      alt="Car"
+                      style="height: 120px; width: 120px"
+                    />
+                    <table>
+                      <tr>
+                        <td>
+                          <span class="material-symbols-outlined">person</span>
+                        </td>
+                        <td>
+                          <p style="margin-right: 5px">4</p>
+                        </td>
+                        <td>
+                          <span class="material-symbols-outlined">cycle</span>
+                        </td>
+                        <td>
+                          <p style="margin-right: 40px">Manual</p>
+                        </td>
+                        <td>
+                          <p><strong>$400</strong>/d</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="grid">
+                <div class="grid-item">
+                  <div class="card">
+                    <table>
+                      <tr>
+                        <td>
+                          <strong style="margin-right: 50px"
+                            >Porsche 718 Cayaman S</strong
+                          >
+                        </td>
+                        <td>
+                          <span class="material-symbols-outlined"
+                            >favorite</span
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                    <p style="margin-bottom: 5px">Coupe</p>
+                    <img
+                      class="card-img"
+                      src="images/car.jpg"
+                      alt="Car"
+                      style="height: 120px; width: 120px"
+                    />
+                    <table>
+                      <tr>
+                        <td>
+                          <span class="material-symbols-outlined">person</span>
+                        </td>
+                        <td>
+                          <p style="margin-right: 5px">4</p>
+                        </td>
+                        <td>
+                          <span class="material-symbols-outlined">cycle</span>
+                        </td>
+                        <td>
+                          <p style="margin-right: 40px">Manual</p>
+                        </td>
+                        <td>
+                          <p><strong>$400</strong>/d</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <!--End of Grid-->
+      </main>
+      <!--
+        <div class="right">
+            <div class="top">
+                <span class="material-symbols-outlined">notifications</span>
+            </div>
+            <div class="profile">
+                <div class="profile-photo">
+                <img src="./images/man_clipArt.jpg" alt="">
+            </div>
+            </div>
+        </div>
+        -->
+      <div class="twoItems">
+        <table class="elementItems">
+          <tr>
+            <td>
+              <span class="material-symbols-outlined">notifications</span>
+            </td>
+            <td>
+              <div class="profile-photo">
+                <img src="./images/man_clipArt.jpg" alt="" />
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
